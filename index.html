@@ -1,14 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Halaman Gacor Gw</title>
+    <meta charset="UTF-8">
+    <title>Liquid Glass Effect Gacor</title>
+    <style>
+        /* Background keren buat ngetes efek kacanya */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #ff0057, #e64a19, #2196f3); /* Warna gradasi vibrant */
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* INI DIA RESEP LIQUID GLASS-NYA */
+        .glass-card {
+            width: 350px;
+            padding: 40px;
+            color: white;
+            text-align: center;
+            
+            /* 1. Warna transparan */
+            background: rgba(255, 255, 255, 0.1); 
+            
+            /* 2. Efek blur (The Real Glass Effect) */
+            backdrop-filter: blur(15px); 
+            -webkit-backdrop-filter: blur(15px); /* Support Safari */
+            
+            /* 3. Border halus */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            
+            /* 4. Shadow biar estetik */
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        h2 { margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
+        p { font-weight: 300; line-height: 1.6; }
+    </style>
 </head>
 <body>
-    <h1>Ini Judul Utama</h1>
-    <p>Ini paragraf, tempat lu nulis bacotan lu.</p>
+
     <div class="glass-card">
-        <h2>Kartu Liquid Glass</h2>
-        <p>Efek ini bakal bikin web lu keliatan premium.</p>
+        <h2>Gacor Abis!</h2>
+        <p>HTML & CSS itu gampang kalau lu tau triknya. Sekarang lu udah punya kartu Liquid Glass yang mantap banget buat UI modern.</p>
     </div>
+
 </body>
 </html>
