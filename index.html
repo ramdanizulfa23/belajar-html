@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Liquid Glass Effect Gacor</title>
+
     <style>
         /* Background keren buat ngetes efek kacanya */
-        body {
+        body
+         {
             margin: 0;
             padding: 0;
             display: flex;
@@ -45,13 +47,39 @@
     background: rgba(255, 255, 255, 0.2); /* Lebih terang pas di-hover */
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5); /* Shadow makin dalem */
 }
+.glass-nav {
+    position: fixed;
+    top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+}
+
+.glass-nav .logo { color: white; font-weight: bold; font-size: 1.5rem; }
+.glass-nav ul { display: flex; list-style: none; gap: 20px; }
+.glass-nav ul li a { color: white; text-decoration: none; font-size: 0.9rem; }
 
         h2 { margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
         p { font-weight: 300; line-height: 1.6; }
     </style>
 </head>
+<body><nav class="glass-nav">
+    <div class="logo">GacorDev</div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav></body>
 <body>
-
+    
     <div class="glass-card">
         <h2>Gacor Abis!</h2>
         <p>HTML & CSS itu gampang kalau lu tau triknya. Sekarang lu udah punya kartu Liquid Glass yang mantap banget buat UI modern.</p>
