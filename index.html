@@ -36,7 +36,15 @@
             
             /* 4. Shadow biar estetik */
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+            transition: 0.5s; /* Biar animasinya halus */
+    cursor: pointer;
         }
+        .glass-card:hover {
+    transform: translateY(-10px); /* Kartu naik dikit */
+    background: rgba(255, 255, 255, 0.2); /* Lebih terang pas di-hover */
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5); /* Shadow makin dalem */
+}
 
         h2 { margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
         p { font-weight: 300; line-height: 1.6; }
