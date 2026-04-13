@@ -65,6 +65,35 @@
 .glass-nav .logo { color: white; font-weight: bold; font-size: 1.5rem; }
 .glass-nav ul { display: flex; list-style: none; gap: 20px; }
 .glass-nav ul li a { color: white; text-decoration: none; font-size: 0.9rem; }
+.glass-input {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    outline: none;
+}
+
+.glass-btn {
+    width: 100%;
+    padding: 12px;
+    background: #00d2ff; /* Warna solid buat kontras */
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 210, 255, 0.4);
+    transition: 0.3s;
+}
+
+.glass-btn:hover {
+    filter: brightness(1.2);
+    transform: scale(1.02);
+}
 
         h2 { margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
         p { font-weight: 300; line-height: 1.6; }
@@ -81,9 +110,12 @@
 <body>
     
     <div class="glass-card">
-        <h2>Gacor Abis!</h2>
-        <p>HTML & CSS itu gampang kalau lu tau triknya. Sekarang lu udah punya kartu Liquid Glass yang mantap banget buat UI modern.</p>
-    </div>
+    <h2>Gacor Abis!</h2>
+    <p>Sekarang lengkap dengan input & button.</p>
+    
+    <input type="text" class="glass-input" placeholder="Tulis sesuatu...">
+    <button class="glass-btn">Gaspol!</button>
+</div>
 
 </body>
 </html>
